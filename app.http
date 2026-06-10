@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{ 
+    "email": "zenitsu@gmail.com", 
+    "password": "admin"
+}
+
+### add department ###
+POST http://localhost:5000/api/department/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTBiMmJjZDlmNjk0NTQ0OWRjMTE0NmMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzk0NjU3NDIsImV4cCI6MTc3OTU1MjE0Mn0.lP47FrTwB-C9omKtjjgFCeX24bsEyzYLz9y_rfKIANw
+
+{ 
+    "dep_name": "IT", 
+    "description": ""
+}
+
+### GET DEPARTMENTS ###
+GET http://localhost:5000/api/department/departmentList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTBiMmJjZDlmNjk0NTQ0OWRjMTE0NmMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzk1MjI3NzksImV4cCI6MTc3OTYwOTE3OX0.vIRFWAnoCwrV1S8MVVPxRbRpEYrLuuajuGGCOSJ16e4
+
+
+### GET SALARY ### 
+
+GET http://localhost:5000/api/salary/6a148049bd1a3ebb5ef256ba
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTBiMmJjZDlmNjk0NTQ0OWRjMTE0NmMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3ODAzMDg2MTYsImV4cCI6MTc4MDM5NTAxNn0.A4HiKQ8evtHxTI4TZ3zws6f7mJCBGjEBzOgvWCi1Gag
