@@ -14,7 +14,7 @@ import connectToDb from './db/db.js'
 connectToDb()
 const app = express()
 app.use(cors({
-    origin: "https://ems-frontend-liart-one.vercel.app/", 
+    origin: "https://ems-frontend-liart-one.vercel.app", 
     methods: ["GET", "POST", "PUT", "DELETE"]
 }))
 
